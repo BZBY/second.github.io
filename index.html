@@ -25,7 +25,7 @@
         </span>
         <label for="userid"><span>账号：</span><input type="text" id="useid"></label>
         </span>
-        <label for="username"><span>用户名：</span><input type="text" id="use"></label>
+        <label for="username"><span>昵称：</span><input type="text" id="use"></label>
         <br>
         <label for="password"><span>密码:</span><input type="password" id="pwd"></label>
         <div>
@@ -60,7 +60,7 @@
             var err;
             console.log(requestOptions.body)
             fetch(`${'https://db.api.orght.cn'}/${'users'}`, requestOptions) // 这里的网址没有id
-                .then(response => response.json())
+                .then(response =>  response.json())
                 .then(data => console.log(data.id))  //新创建后的数据的id
                 .catch(err => console.log(err))
 
