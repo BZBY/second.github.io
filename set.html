@@ -150,7 +150,7 @@
                 var n2 = loc.indexOf('=');
                 var txt = decodeURI(loc.substr(n2+1,n1-n2));
                 var box = document.getElementById('box');
-                alert(box.innerHTML);
+                
                 requestOptions.body = JSON.stringify(userData); //将数据字符串化
                 fetch(`${'http://123.60.44.50:3000'}/${'users'}/${box.innerHTML}`, requestOptions)
                     .then(response => alert("保存数据成功"))
